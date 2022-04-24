@@ -1,7 +1,13 @@
+import Head from "next/head";
+
 export default function Product({ product }) {
     if (product) {
         return (
             <div>
+                <Head>
+                    <title>{product.title}</title>
+                    <meta name="description" content={`${product.description}`}/>
+                </Head>
                 <h1>id: { product.id }</h1>
                 <h1>id: { product.title }</h1>
             </div>
