@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
 "scripts": {
-    "dev": "next",
+    "dev": "next -p 3008",
     "build": "next build",
     "start": "next start"
   },
