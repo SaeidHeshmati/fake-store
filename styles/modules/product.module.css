@@ -19,7 +19,6 @@
 @media only screen and (min-width: 920px) {
     .background {
         width: 100vw;
-        /* background-color: blue; */
         -webkit-transition: min-width 400ms ease;
         transition: min-width 400ms ease;
         -webkit-transition-delay: 250ms;
@@ -31,26 +30,131 @@
 .container {
     display: flex;
     align-items: stretch;
-    width: 100%;
-    margin: 96px 64px;
+    width: 84%;
+    margin: 10% 7%;
     background-color: white;
     border-radius: 16px;
+    box-shadow: 30px 30px rgb(0 0 0 / 1%);
 }
 
 .infoHolder {
     width: 65%;
-    /* background-color: red; */
 }
 
 .imgHolder {
     display: flex;
     align-items: center;
     width: 35%;
-    /* background-color: purple; */
+    margin: 16px;
 }
 
 .imgHolder .img {
     max-width: 100%;
     height: auto;
     border-radius: 16px;
+}
+
+.firstRow {
+    display: flex;
+    margin: 10% 5% 0% 5%;
+    align-items: center;
+    width: calc(100% - 48px);
+    gap: 16px;
+}
+
+.title {
+    width: calc(100% - 116px);
+    margin: 0;
+    font-weight: bold;
+    color: #444;
+    font-size: 2.5vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 150%;
+}
+
+@media only screen and (min-width: 920px) {
+    .title {
+        font-size: 24px;
+    }
+}
+
+.category {
+    margin-left: 5%;
+    margin-top: 1%;
+    line-height: 130%;
+    font-size: 1.5vw;
+    color: #aaa;
+}
+
+@media only screen and (min-width: 920px) {
+    .category {
+        font-size: 15px;
+    }
+}
+
+.price {
+    margin-left: 5%;
+    margin-top: 1%;
+    line-height: 140%;
+    font-size: 2vw;
+    color: #f6666a;
+}
+
+@media only screen and (min-width: 920px) {
+    .price {
+        font-size: 20px;
+    }
+}
+
+.desTitle {
+    margin-left: 5%;
+    margin-top: 10%;
+    line-height: 140%;
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: #444;
+}
+
+@media only screen and (min-width: 920px) {
+    .desTitle {
+        font-size: 15px;
+    }
+}
+.description {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+    line-height: 140%;
+    font-size: 1.5vw;
+    color: #aaa;
+}
+
+@media only screen and (min-width: 920px) {
+    .description {
+        font-size: 15px;
+    }
+}
+
+.buy {
+    margin-left: 5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 30%;
+    height: 10%;
+    background-image: linear-gradient(#f7a28f, #ff4464);
+    box-shadow: 8px 8px rgb(255 194 202 / 20%);
+    border-radius: 8px;
+    line-height: 250%;
+    font-size: 1.8vw;
+    color: white;
+    text-align: center;
+    max-height: 50px;
+}
+
+@media only screen and (min-width: 920px) {
+    .buy {
+        font-size: 18px;
+    }
 }
